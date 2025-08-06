@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubHawks.com 2025 - Empowering Authors. Connecting Readers. Distributing Great Books.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Flying Elements Container -->
+    <div class="flying-elements">
+        <div class="flying-book book-1">📚</div>
+        <div class="flying-book book-2">📖</div>
+        <div class="flying-pen pen-1">✒️</div>
+        <div class="flying-pen pen-2">🖊️</div>
+        <div class="flying-pencil pencil-1">✏️</div>
+        <div class="flying-pencil pencil-2">📝</div>
+        <div class="flying-arrow arrow-1">➡️</div>
+        <div class="flying-arrow arrow-2">⬅️</div>
+        <div class="flying-star star-1">⭐</div>
+        <div class="flying-star star-2">✨</div>
+    </div>
+
+    <!-- 3D Background -->
+    <div class="three-d-background"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">HubHawks.com</h1>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#books" class="nav-link">Books</a></li>
+                        <li><a href="#authors" class="nav-link">Authors</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#blog" class="nav-link">Blog & News</a></li>
+                        <li><a href="#about" class="nav-link">About Us</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="search-toggle" id="searchToggle">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="search-container" id="searchContainer">
+                        <input type="text" placeholder="Search books, authors..." class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="cta-btn">Publish With Us</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Story Starts Here</h1>
+                <p class="hero-tagline">Empowering Authors. Connecting Readers. Distributing Great Books.</p>
+                <button class="hero-cta">Explore Our Books</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Featured Books Section -->
+        <section class="featured-books" id="books">
+            <div class="container">
+                <h2 class="section-title">Featured Books</h2>
+                <p class="section-subtitle">Discover our latest releases and bestselling titles</p>
+                
+                <div class="books-grid">
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop&crop=center" alt="Book Cover" class="book-image">
+                            <div class="book-overlay">
+                                <button class="book-cta">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">The Mahabharata Secret</h3>
+                            <p class="book-author">Kevin Missal</p>
+                            <button class="book-btn">Purchase</button>
+                        </div>
+                    </div>
+                    
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=300&h=400&fit=crop&crop=center" alt="Book Cover" class="book-image">
+                            <div class="book-overlay">
+                                <button class="book-cta">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">The Mahabharata Quest</h3>
+                            <p class="book-author">Kevin Missal</p>
+                            <button class="book-btn">Purchase</button>
+                        </div>
+                    </div>
+                    
+                    <div class="book-card">
+                        <div class="book-cover">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&h=400&fit=crop&crop=center" alt="Book Cover" class="book-image">
+                            <div class="book-overlay">
+                                <button class="book-cta">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">The Mahabharata Revenge</h3>
+                            <p class="book-author">Kevin Missal</p>
+                            <button class="book-btn">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Authors Section -->
+        <section class="authors-section" id="authors">
+            <div class="container">
+                <h2 class="section-title">Meet Our Authors</h2>
+                <p class="section-subtitle">Discover the creative minds behind our bestselling books</p>
+                
+                <div class="authors-grid">
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Author" class="author-img">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Kevin Missal</h3>
+                            <p class="author-genre">Fantasy & Mythology</p>
+                            <p class="author-bio">Bestselling author known for his epic mythological retellings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face" alt="Author" class="author-img">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Sarah Johnson</h3>
+                            <p class="author-genre">Contemporary Fiction</p>
+                            <p class="author-bio">Award-winning novelist exploring modern relationships.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Author" class="author-img">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="author-name">Michael Chen</h3>
+                            <p class="author-genre">Science Fiction</p>
+                            <p class="author-bio">Visionary writer pushing the boundaries of speculative fiction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive publishing solutions for authors</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3 class="service-title">Editing & Proofreading</h3>
+                        <p class="service-description">Professional editing services to polish your manuscript.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="service-title">Cover Design</h3>
+                        <p class="service-description">Eye-catching cover designs that sell your book.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="service-title">Global Distribution</h3>
+                        <p class="service-description">Worldwide distribution across all major platforms.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-title">Marketing & Promotion</h3>
+                        <p class="service-description">Strategic marketing to reach your target audience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About HubHawks</h2>
+                        <p class="about-description">
+                            HubHawks is a leading independent publishing house dedicated to discovering and nurturing 
+                            exceptional talent. We believe every author has a unique story to tell, and we're here 
+                            to help bring those stories to life.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h3 class="stat-number">500+</h3>
+                                <p class="stat-label">Books Published</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">100+</h3>
+                                <p class="stat-label">Authors</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="stat-number">1M+</h3>
+                                <p class="stat-label">Books Sold</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=400&fit=crop" alt="Publishing House" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your publishing journey?</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hello@hubhawks.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Publishing Street<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">HubHawks.com</h3>
+                    <p class="footer-description">
+                        Empowering Authors. Connecting Readers. Distributing Great Books.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#books">Books</a></li>
+                        <li><a href="#authors">Authors</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HubHawks.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
